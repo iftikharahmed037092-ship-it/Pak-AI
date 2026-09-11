@@ -1,0 +1,165 @@
+/* =========================================
+   PAKAI — BASIC CHAT SYSTEM
+   FEATURE: Main Global Styles
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family:
+        Arial,
+        "Noto Nastaliq Urdu",
+        "Noto Sans Arabic",
+        sans-serif;
+    background: #f7f8fa;
+    color: #202124;
+}
+
+button,
+textarea,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   LANDING PAGE
+   ========================================= */
+
+.landing-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    direction: ltr;
+    margin-bottom: 35px;
+}
+
+.brand-logo {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #2e7d32;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.22);
+}
+
+.brand h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #202124;
+}
+
+.landing-page h2 {
+    max-width: 700px;
+    font-size: clamp(28px, 6vw, 48px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    max-width: 600px;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 28px;
+    border-radius: 14px;
+    background: #2e7d32;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.start-button:hover {
+    background: #256b29;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(46, 125, 50, 0.2);
+}
+
+.start-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .landing-page {
+        padding: 25px 16px;
+    }
+
+    .brand {
+        margin-bottom: 28px;
+    }
+
+    .brand-logo {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        font-size: 22px;
+    }
+
+    .brand h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .start-button {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+
