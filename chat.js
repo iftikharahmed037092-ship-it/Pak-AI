@@ -10,7 +10,7 @@
    BACKEND API
    ========================================= */
 
-const API_URL = "https://pak-ai-bzl1.onrender.com/api/chat";
+const API_URL = "https://pak-ai-1.onrender.com/api/chat";
 
 
 /* =========================================
