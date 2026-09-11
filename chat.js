@@ -1,5 +1,5 @@
 "use strict";
-const API_URL = "https://pak-ai-bzl1.onrender.com/chat";
+const API_URL = "https://pak-ai-bzl1.onrender.com/api/chat"; // /api/chat کر دیا
 
 const chatForm = document.getElementById('chatForm');
 const messageInput = document.getElementById('messageInput');
@@ -39,7 +39,7 @@ async function handleSend(e){
         
         const data = await res.json();
         typingIndicator.classList.add('hidden');
-        addMessage(data.reply, 'bot');
+        addMessage(data.answer, 'bot'); // data.reply کی جگہ data.answer کر دیا
         
     } catch(err){
         typingIndicator.classList.add('hidden');
