@@ -15,11 +15,7 @@ html {
 
 body {
     min-height: 100vh;
-    font-family:
-        Arial,
-        "Noto Nastaliq Urdu",
-        "Noto Sans Arabic",
-        sans-serif;
+    font-family: Arial, "Segoe UI", sans-serif;
     background: #f7f8fa;
     color: #202124;
 }
@@ -39,7 +35,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 
 /* =========================================
    LANDING PAGE
@@ -126,40 +121,32 @@ a {
     transform: translateY(0);
 }
 
-
 /* =========================================
-   MOBILE
+   CHAT PAGE
    ========================================= */
 
-@media (max-width: 600px) {
-
-    .landing-page {
-        padding: 25px 16px;
-    }
-
-    .brand {
-        margin-bottom: 28px;
-    }
-
-    .brand-logo {
-        width: 46px;
-        height: 46px;
-        border-radius: 14px;
-        font-size: 22px;
-    }
-
-    .brand h1 {
-        font-size: 28px;
-    }
-
-    .subtitle {
-        font-size: 15px;
-    }
-
-    .start-button {
-        width: 100%;
-        max-width: 320px;
-    }
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
 
+.chat-header {
+    padding: 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
 
+.chat-header a {
+    color: #2e7d32;
+    font-weight: 700;
+    display: block;
+    text-align: left;
+}
+
+.chat-header
